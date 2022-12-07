@@ -85,7 +85,7 @@ def populous_country_counts
   # populations of at least 10 million.
   execute(<<-SQL)
   SELECT
-    continent, COUNT(name)
+    continent, (name)
   FROM
     countries
   WHERE 
